@@ -1,5 +1,4 @@
 #include "ESPAsyncWebServer.h"
-#include <esp_wifi.h>
 #include <WiFi.h>
 
 constexpr char WIFI_SSID[] = "D-Link-3D1BBF";
