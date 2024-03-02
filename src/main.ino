@@ -1,5 +1,4 @@
 #include "ESPAsyncWebServer.h"
-#include <esp_now.h>
 #include <esp_wifi.h>
 #include <WiFi.h>
 
@@ -58,5 +57,4 @@ void setup() {
   server.begin();
 }
  
-void loop() {
-}
+void loop() {}
