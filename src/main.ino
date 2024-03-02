@@ -4,13 +4,11 @@
 constexpr char WIFI_SSID[] = "D-Link-3D1BBF";
 constexpr char WIFI_PASS[] = "p2mxsajrqwkd9c7g";
 
-// Setta un indirizzo IP Fisso
 IPAddress local_IP(192, 168, 1, 200);
-// Setta l'indirizzo del Gateway
 IPAddress gateway(192, 168, 1, 1);
 IPAddress subnet(255, 255, 0, 0);
-IPAddress primaryDNS(8, 8, 8, 8); //opzionale
-IPAddress secondaryDNS(8, 8, 4, 4); //opzionale
+IPAddress primaryDNS(8, 8, 8, 8);
+IPAddress secondaryDNS(8, 8, 4, 4);
 
 AsyncWebServer server(80);
 
