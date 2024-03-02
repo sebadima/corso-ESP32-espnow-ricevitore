@@ -1,7 +1,3 @@
-// https://rntlab.com/question/how-to-know-and-or-set-the-wifi-channel-on-an-esp32/?utm_source=pocket_saves
-// https://github.com/HarringayMakerSpace/ESP-Now/blob/master/espnow-sensor-minimal/espnow-sensor-minimal.ino
-// https://randomnerdtutorials.com/esp32-esp-now-wi-fi-web-server/
-
 #include "ESPAsyncWebServer.h"
 #include <Arduino_JSON.h>
 #include <Arduino.h>
@@ -12,8 +8,8 @@
 #include "soc/rtc_cntl_reg.h"
 #include "BluetoothSerial.h"
 
-constexpr char WIFI_SSID[] = "NOME-DELLA-RETE-WIFI";
-constexpr char WIFI_PASS[] = "password-della-rete-wifi";
+constexpr char WIFI_SSID[] = "D-Link-3D1BBF";
+constexpr char WIFI_PASS[] = "p2mxsajrqwkd9c7g";
 
 // Setta un indirizzo IP Fisso
 IPAddress local_IP(192, 168, 1, 200);
