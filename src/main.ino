@@ -1,7 +1,7 @@
 #include "ESPAsyncWebServer.h"
 #include <WiFi.h>
 
-constexpr char WIFI_SSID[] = "D-Link-3D1BBF000";
+constexpr char WIFI_SSID[] = "D-Link-3D1BBF";
 constexpr char WIFI_PASS[] = "p2mxsajrqwkd9c7g";
 
 IPAddress local_IP(192, 168, 1, 200);
@@ -54,4 +54,4 @@ void setup() {
   server.begin();
 }
  
-void loop() {}
+void loop() {} 
