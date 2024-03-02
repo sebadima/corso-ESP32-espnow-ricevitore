@@ -1,5 +1,4 @@
 #include "ESPAsyncWebServer.h"
-#include <Arduino.h>
 #include <esp_now.h>
 #include <esp_wifi.h>
 #include <WiFi.h>
@@ -20,44 +19,10 @@ AsyncWebServer server(80);
 const char index_html[] PROGMEM = R"rawliteral(
 <!DOCTYPE HTML><html>
 <head>
-  <title>Robotdazero - rete "Ambientale" con ESP32</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="icon" href="data:,">
-  <style>
-    html {font-family: Arial; display: inline-block; text-align: center;}
-    p {  font-size: 1.2rem;}
-    body {  margin: 0;}
-    .topnav { overflow: hidden; background-color: #2f4468; color: white; font-size: 1.7rem; }
-    .content { padding: 20px; }
-    .card { background-color: white; box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5); }
-    .cards { max-width: 700px; margin: 0 auto; display: grid; grid-gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-    .reading { font-size: 2.8rem; }
-    .packet { color: #bebebe; }
-    .card.temperature { color: #fd7e14; }
-    .card.humidity { color: #1b78e2; }
-  </style>
+  <title>Robotdazero - un semplice sito Statico</title>
 </head>
 <body>
-  <div class="topnav">
-    <h3>ROBOTDAZERO - rete "Ambientale" con ESP32</h3>
-  </div>
-  <div class="content">
-    <div class="cards">
-      <div class="card temperature">
-        <h4><i class="fas fa-thermometer-half"></i> SCHEDA #1 - TEMPERATURA</h4><p><span class="reading"><span id="t1"></span> &deg;C</span></p><p class="packet">sensore DHT11: <span id="rt1"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="fas fa-tint"></i> SCHEDA #1 - UMIDITA'</h4><p><span class="reading"><span id="h1"></span> &percnt;</span></p><p class="packet">sensore DHT11: <span id="rh1"></span></p>
-      </div>
-      <div class="card temperature">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Fumo/Metano</h4><p><span class="reading"><span id="t2"></span> ppm</span></p><p class="packet">sensore MQ-2: <span id="rt2"></span></p>
-      </div>
-      <div class="card humidity">
-        <h4><i class="far fa-bell"></i> SCHEDA #1 - Qualita' dell'aria</h4><p><span class="reading"><span id="h2"></span> ppm</span></p><p class="packet">sensore MQ-135: <span id="rh2"></span></p>
-      </div>
-    </div>
-  </div>
+  <p>Robotdazero - un semplice sito Statico</p>
 </body>
 </html>)rawliteral";
 
